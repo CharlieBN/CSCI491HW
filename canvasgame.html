@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v5.js"></script>
+
+</head>
+<body onload="draw();">
+<canvas id="myCanvas" width="800" height="600"
+        style="border:1px solid #000000;">
+</canvas>
+<button id="btnCheck">Start Game</button>
+
+<div id="avgContainer">
+</div>
+
+<div></div>
+
+<a href="main.html">GO HOME</a>
+
+<p>Data: <output id="result"></output></p>
+<p id="name">Full Name on local storage:</p>
+<form>
+    Full name:<br>
+    <input type="text" name="fullname" id="fullname"><br>
+    <input type="button" id="fullnameButton" value="Submit">
+</form>
+<button id="worker" onclick="startWorker()">Get Battlefield 4 Data from JSON using Web Workers</button>
+
+<script type="text/javascript" src="js/canvasgame.js"></script>
+
+<script type="text/javascript" src="js/d3visualization.js"></script>
+<script type="text/javascript" src="js/wordstuff.js"></script>
+<script type="text/javascript" src="js/webworker.js"></script>
+<script type="text/javascript" src="js/localstorage.js"></script>
+
+</body>
+</html>

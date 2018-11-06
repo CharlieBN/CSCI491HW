@@ -1,0 +1,18 @@
+I debugged the developing of thia part 2 of this project using Chrome's inspect features:
+
+Console: here I printed simple console.log's messages to check my progress in what to I wanted to grab for example
+the JSON object logic in the new experience page, this includes: what are the current contents of the JSON object,
+and how to get the values inside it.
+
+Application>Cookies: Here I can manage and keep track of my cookies made for the register and login pages logic, and
+test the change in the experience page depending of which employer is currently logged in.
+
+I had problems implementing a third party library for the password checker, since it's target "id=password" was
+conflicting with the same target of Bootstrap, so I decided to go for a simple "hacky" regex implementation.
+
+The tech rick editor tinyMCE was also conflicting with Bootstrap, and made the focus, blur functionality on the contact page on the textarea tedious.
+
+For the data_worker.js file I could not load it on the js/webworker file correctly unless it was on the root folder.
+
+
+Repository: https://github.com/CharlieBN/CSCI491HW
