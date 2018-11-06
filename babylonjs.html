@@ -115,6 +115,7 @@
 
 		//Then add the animation object to box1
 		box.animations.push(animationBox);
+		box2.animations.push(animationBox);
 
 		// animation in the x-axis
 	    var animationBox2 = new BABYLON.Animation("xAnimation", "rotation.x", frameRate, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
@@ -144,14 +145,17 @@
 
 		//Then add the animation object to box1
 		box.animations.push(animationBox2);
+		box2.animations.push(animationBox2);
 		//scene.beginAnimation(box, 0, 100, true);
 		
 		var nextAnimation = function() {
 		scene.beginDirectAnimation(box, [animationBox, animationBox2], 0, 2 * frameRate, true);
+		scene.beginDirectAnimation(box2, [animationBox, animationBox2], 0, 2 * frameRate, true);
 		}
 
 		scene.beginDirectAnimation(box, [animationBox], 0, 2 * frameRate, false, 1, nextAnimation);
-		
+		scene.beginDirectAnimation(box2, [animationBox], 0, 2 * frameRate, false, 1, nextAnimation);
+
 		// add the image to the sides of the cube - you can use different images
 		// if you use a sprite sheet
 		var mat = new BABYLON.StandardMaterial("mat", scene);
