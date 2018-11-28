@@ -1,0 +1,11 @@
+Get node.js installed
+Get socket.io installed
+Get jade installed
+Get ExpressJS installed
+
+From the main folder in terminal:
+run "cd chat"
+run "node index.js"
+go in browser to: http://localhost:3700/ in two tabs to test it.
+Type Name and message and click send, test that you can see the message in both tabs.
+Try the same in the other tab with other Name and other message.

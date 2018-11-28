@@ -1,0 +1,17 @@
+Get node.js installed
+Get socket.io installed
+Get jade installed
+Get ExpressJS installed
+
+Create a database in MySQL Workbench in the localhost server with the table person,
+with tables: id (int autoincrement), username(varchar), password(varchar), employer(varchar)
+
+From the main folder in terminal:
+run "node server.js"
+
+To see the contacts:
+go in browser to: http://localhost:4300/showcontacts
+
+To create a contact:
+go in browser to: http://localhost:4300/createcontact
+Type name, password and employer
